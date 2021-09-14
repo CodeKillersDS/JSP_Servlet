@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+  <servlet>
+    <description></description>
+    <display-name>deleteReceiptServlet</display-name>
+    <servlet-name>deleteReceiptServlet</servlet-name>
+    <servlet-class>com.billPayment.servlet.deleteReceiptServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteReceiptServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InsertReceiptServlet</display-name>
+    <servlet-name>InsertReceiptServlet</servlet-name>
+    <servlet-class>com.billPayment.servlet.InsertReceiptServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertReceiptServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>receiptServlet</display-name>
+    <servlet-name>receiptServlet</servlet-name>
+    <servlet-class>com.billPayment.servlet.receiptServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>receiptServlet</servlet-name>
+    <url-pattern>/receipt</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>updateReceiptServlet</display-name>
+    <servlet-name>updateReceiptServlet</servlet-name>
+    <servlet-class>com.billPayment.servlet.updateReceiptServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateReceiptServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+</web-app>
